@@ -9,11 +9,11 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware setup
-app.use(cors()); // Enables Cross-Origin Resource Sharing
-app.use(express.json()); // Parses incoming JSON requests
+app.use(cors()); 
+app.use(express.json()); 
 
 // API Routes
-app.use('/', ordersRoutes);
+app.use('/api/v1', ordersRoutes);
 
 // Start the server
 app.listen(PORT, () => {

@@ -7,7 +7,7 @@ on:
     branches: [ "master" ]
 
 jobs:
-  frontend:
+  build-frontend:
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, '[frontend]')
     defaults:
@@ -28,12 +28,12 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: cd orders-ui && npm install
 
       - name: Build React app
-        run: npm run build
+        run: cd orders-ui && npm run build
  
-  backend:
+  build-backend:
     runs-on: ubuntu-latest
     if: contains(github.event.head_commit.message, '[backend]')
     defaults:
@@ -54,7 +54,7 @@ jobs:
           cache: 'npm'
 
       - name: Install dependencies
-        run: npm install
+        run: cd orders-service && npm install
 
       - name: Run backend build
-        run: npm run build
+        run: cd orders-service && npm run build
