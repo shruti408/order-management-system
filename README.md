@@ -2,10 +2,7 @@
 1. Create a Project
  Go to Appwrite Console -> Create Project -> "Order Management System"
 
-2. Enable Authentication
- Add Email/Password auth in Auth settings
-
-3. Create a Database
+2. Create a Database
  Database: ordersDB
  Collection: orders
  Attributes:
@@ -15,11 +12,11 @@
   invoiceFileUrl (Url)
   and appwrite gives a DOCUMENT_ID for every new entry, we will use it as orderId.
 
-4. Create a Storage Bucket for invoice-files 
+3. Create a Storage Bucket for invoice-files 
  Bucket name: invoices
  
  
-5. Setup Messaging
+4. Setup Messaging
  Appwrite Messaging lets you send notifications (email, SMS, push).
  Go to Messaging in Appwrite console.
  Add a Provider (example: SMTP for email).
@@ -38,7 +35,7 @@
   Copy these into your .env: 
    PROJECT_ID, API_ENDPOINT, API_KEY. 
 
-5. Integrate the Appwrite SDK:
+6. Integrate the Appwrite SDK:
  -Install the Appwrite SDK: npm install node-appwrite
  -Add config folder in your application's entry point, inside it add appwrite.js file.
  -Inside it, import and initialize the SDK and use it in your application
