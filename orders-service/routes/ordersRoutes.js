@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { createOrder, getOrderById, getAllOrders, getFileById } = require('../services/orderService');
+const { createOrder, getOrderById, getAllOrders, getFileById } = require('../services/ordersService');
 const multer = require('multer');
 
 // Configure multer for file uploads
