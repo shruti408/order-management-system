@@ -14,7 +14,7 @@ function Header() {
                             <Link className="nav-link active" aria-current="page" to="/">Dashboard</Link>
                         </li>
                         <li className="nav-item me-5">
-                            <Link className="nav-link active" aria-current="page" to="/orders/:id">OrderDetail</Link>
+                            <Link className="nav-link active" aria-current="page" to="#">OrderDetail</Link>
                         </li>
                         <li className="nav-item">
                             <Link className="nav-link active" to="/create">CreateOrder</Link>
