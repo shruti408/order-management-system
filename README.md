@@ -25,12 +25,13 @@
  Add a Provider (example: SMTP for email).
   Name: email-provider
   Type: SMTP
-  Host: smtp.yourprovider.com
+  Host: "smtp.ethereal.email"
   Port: 587
-  Username: your@email.com
-  Password: your-smtp-password
+  Username: "brent35@ethereal.email"
+  Password: "ADbZyXTkcDwkB6rD5U"
  
  Add a Topic → order-updates.
+*Ethereal is a fake SMTP service where you get an email and  apssword to send email just as you would with any other SMTP provider and finally preview the sent message and no emails are actually delivered. 
  
 5.Get Project Credentials
  In Appwrite console → Settings → API Keys
@@ -46,10 +47,10 @@
 # API references
 Base Url- 'https://order-system-ri5c.onrender.com'
 Method - Endpoint - Description
-GET - '/' - Get all orders
+GET - '/orders' - Get all orders
 GET	- '/orders/:id' - Get order by ID
 GET	- '/orders/files/:id' - Get file by ID
-POST - '/' - Create new order
+POST - '/orders' - Create new order
  
 
 # How to run the app locally 
