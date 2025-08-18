@@ -13,7 +13,7 @@ app.use(cors()); // Enables Cross-Origin Resource Sharing
 app.use(express.json()); // Parses incoming JSON requests
 
 // API Routes
-app.use('/', ordersRoutes);
+app.use('/api/v1', ordersRoutes);
 
 // Start the server
 app.listen(PORT, () => {
