@@ -1,6 +1,6 @@
 # Appwrite setup instructions
 1. Create a Project
- Go to Appwrite Console → Create Project → "Order Management System"
+ Go to Appwrite Console -> Create Project -> "Order Management System"
 
 2. Enable Authentication
  Add Email/Password auth in Auth settings
