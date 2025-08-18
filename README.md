@@ -58,10 +58,10 @@ To come back to order-system folder: cd ..
 Go iniside orders-ui folder: cd orders-service
 Install dependencies: npm install
  Create a .env file:
- APPWRITE_ENDPOINT=http://localhost/v1
- APPWRITE_PROJECT_ID=your-project-id
- APPWRITE_API_KEY=your-api-key
- PORT=5000
+  APPWRITE_ENDPOINT=http://localhost/v1
+  APPWRITE_PROJECT_ID=your-project-id
+  APPWRITE_API_KEY=your-api-key
+  PORT=5000
 Run backend: npm start
 API runs on - http://localhost:5000
 
