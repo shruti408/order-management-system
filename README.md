@@ -51,7 +51,7 @@ POST - '/' - Create new order
  
 
 # How to run the app locally 
-Clone the repository: git clone "https://github.com/shruti408/order-system.git" 
+Clone the repository: git clone "https://github.com/shruti408/order-management-system.git" 
  
 1. Setup Backend (order-service)
 To come back to order-system folder: cd ..  
