@@ -13,7 +13,7 @@ app.use(cors());
 app.use(express.json()); 
 
 // API Routes
-app.use('/api/v1/orders', ordersRoutes);
+app.use('/', ordersRoutes);
 
 // Start the server
 app.listen(PORT, () => {
