@@ -44,10 +44,10 @@
 # API references
 Base Url- 'https://order-system-ri5c.onrender.com'
 Method - Endpoint - Description
-GET - '/orders' - Get all orders
+GET - '/' - Get all orders
 GET	- '/orders/:id' - Get order by ID
 GET	- '/orders/files/:id' - Get file by ID
-POST - '/orders' - Create new order
+POST - '/' - Create new order
  
 
 # How to run the app locally 
