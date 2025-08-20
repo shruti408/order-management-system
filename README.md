@@ -42,7 +42,7 @@
 
 
 # API references
-Base Url- 'https://order-system-ri5c.onrender.com/api/v1/orders'
+Base Url- 'https://order-system-ri5c.onrender.com'
 Method - Endpoint - Description
 GET - '/' - Get all orders
 GET	- '/:id' - Get order by ID
@@ -51,7 +51,7 @@ POST - '/' - Create new order
  
 
 # How to run the app locally 
-Clone the repository: git clone "https://github.com/shruti408/order-system.git" 
+Clone the repository: git clone "https://github.com/shruti408/order-management-system" 
  
 1. Setup Backend (order-service)
 To come back to order-system folder: cd ..  
