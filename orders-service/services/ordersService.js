@@ -18,6 +18,11 @@ const createOrder = async (customerName, orderAmount, invoiceFile) => {
         invoiceFile.mimetype
     );
 
+    if(!inputFile){
+        console.error('Invalid file');
+        throw new Error('Invalid file input');
+    }
+
     //  Upload invoice to Appwrite Storage
     const storageFile = await storage.createFile(
         BUCKET_ID,

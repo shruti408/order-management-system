@@ -7,7 +7,7 @@ const multer = require('multer');
 const upload = multer({ storage: multer.memoryStorage() })
 
 // create new order 
-router.post('/orders', upload.single('invoiceFile'), async (req, res) => {
+router.post('/', upload.single('invoiceFile'), async (req, res) => {
      const { customerName, orderAmount } = req.body;
     const invoiceFile = req.file;
 
@@ -26,7 +26,7 @@ router.post('/orders', upload.single('invoiceFile'), async (req, res) => {
 });
 
 // get all orders 
-router.get('/orders', async (req, res) => {
+router.get('/', async (req, res) => {
     try {
         const orders = await getAllOrders();
         res.status(200).json(orders);
@@ -37,7 +37,7 @@ router.get('/orders', async (req, res) => {
 });
 
 // get order by id 
-router.get('/orders/:id', async (req, res) => {
+router.get('/:id', async (req, res) => {
     try {
          const orderId = req.params.id;
         const order = await getOrderById(orderId);
@@ -55,7 +55,7 @@ router.get('/orders/:id', async (req, res) => {
 });
 
 // get file by id 
-router.get('/orders/files/:id', async (req, res) => {
+router.get('/files/:id', async (req, res) => {
     try {
          
         const fileId = req.params.id;

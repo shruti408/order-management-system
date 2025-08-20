@@ -8,8 +8,8 @@ const api = axios.create({
 });
 
 export const getOrders = () => api.get('/');
-export const getOrderById = (id) => api.get(`/orders/${id}`);
-export const getFileById = (id) => api.get(`/orders/files/${id}`, { responseType: 'arraybuffer' });
+export const getOrderById = (id) => api.get(`/${id}`);
+export const getFileById = (id) => api.get(`/files/${id}`, { responseType: 'arraybuffer' });
 export const createOrder = (formData) => {
   const config = {
     headers: {
