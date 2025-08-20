@@ -42,12 +42,12 @@
 
 
 # API references
-Base Url- 'https://order-system-ri5c.onrender.com'
+Base Url- 'https://order-system-ri5c.onrender.com/api/v1/orders'
 Method - Endpoint - Description
-GET - '/orders' - Get all orders
-GET	- '/orders/:id' - Get order by ID
-GET	- '/orders/files/:id' - Get file by ID
-POST - '/orders' - Create new order
+GET - '/' - Get all orders
+GET	- '/:id' - Get order by ID
+GET	- '/files/:id' - Get file by ID
+POST - '/' - Create new order
  
 
 # How to run the app locally 
